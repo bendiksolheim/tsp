@@ -3,13 +3,17 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://bendiksolheim.github.io/tsp/",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "@tweakpane/core": "^1.1.8",
+    "gh-pages": "^5.0.0",
     "typescript": "^5.0.2",
     "vite": "^4.3.2"
   },
